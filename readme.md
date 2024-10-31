@@ -9,6 +9,9 @@ This repository contains a simple trading system that simulates the workflow of 
 - PostgreSQL: Stores order and balance data.
 - Kafka: Handles messaging between services.
 
+![Sample Architecture](images/sample-arch.cex.png)
+
+
 Table of Contents
 - Setup
 - Services Overview
