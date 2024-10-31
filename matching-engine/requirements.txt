@@ -1,0 +1,7 @@
+kafka-python
+redis
+requests
+flask
+flask_socketio
+eventlet
+flask-cors

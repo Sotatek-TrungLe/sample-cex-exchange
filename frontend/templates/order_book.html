@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Book</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .bid {
+            color: green;
+        }
+        .ask {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Book</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Bid Quantity</th>
+                <th>Bid Price</th>
+                <th>Ask Price</th>
+                <th>Ask Quantity</th>
+            </tr>
+        </thead>
+        <tbody id="order-book">
+            <!-- Order book rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Socket.IO and custom JavaScript -->
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/orderBook.js') }}"></script>
+</body>
+</html>
